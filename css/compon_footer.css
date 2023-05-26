@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+
+* {
+   box-sizing: border-box;
+}
+
+
+body {
+   font-family: 'Lato', sans-serif;
+   color: rgb(145, 145, 145)
+}
+
+
+/* Common Styles */
+h1 { font-size: 30px; }
+h2 { font-size: 26px; }
+h3 { font-size: 24px; }
+h4 { font-size: 22px; }
+h5 { font-size: 20px; }
+h6 { font-size: 18px; }
+
+
+/* Footer */
+
+
+
+/* to set icon size */
+.footerIcons img {
+   height: 2rem;
+   width: 2rem;
+}
+
+
+.line {
+   border-left: 2px solid rgb(196, 196, 196);
+   height: 33px;
+}
+
+

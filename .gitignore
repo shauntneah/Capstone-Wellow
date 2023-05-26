@@ -1,9 +1,12 @@
+<<<<<<< HEAD
 HELP.md
 #target/
 src/test
 target/test-classes/
 target/maven-status/maven-compiler-plugin/testCompile
 !.mvn/wrapper/maven-wrapper.jar
+.DS_Store
+
 
 ### STS ###
 .apt_generated
@@ -32,3 +35,10 @@ build/
 
 ### VS Code ###
 .vscode/
+=======
+
+# ignore hidden system files 
+.DS_Store
+Thumbs.db
+Icon\r
+>>>>>>> origin/main

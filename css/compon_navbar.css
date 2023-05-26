@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    color: black;
+   
+}
+
+/* Common Styles */
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+/* Search icon Button hover */
+.btnhover:hover {
+    background: #ddd;
+
+}
+
+
+
+/* Nav link remove underline*/
+header a, header a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    padding: 0 20px;
+    background-color: rgb(236, 234, 232);
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* div */
+#brand {
+
+    display: flex;
+    align-items: center;
+
+}
+
+/* Wellow logo*/
+#brand>a {
+    font-weight: bold;
+    font-size: 22px;
+    color: #09c372;
+}
+
+#brand li {
+    padding-top: 20px;
+}
+
+/* Style the search box inside the navigation bar */
+nav form {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-bottom: 8px;
+}
+
+/* unordered list styling */
+ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul a {
+    color: black;
+}
+
+ul li {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* login button and shopping cart */
+#login,
+#cart {
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+#login {
+    border: 1px solid #498afb;
+}
+
+
+#login a {
+    color: #498afb;
+}
+
+#logout {
+    border: none;
+}
+
+
+#logout a {
+    color: #498afb;
+}
+
+#search-mobile {
+    display: none;
+}
+
+/* Hamburger styling */
+
+#hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+}
+
+#hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Hamburger transition into X and back to hamburger 
+The rotate(45deg) function rotates the element 45 degrees clockwise. The translate(-6px, -8px) function then moves the element 6 pixels to the left and 8 pixels up. Together, these functions rotate and move the element diagonally to the left and up.
+*/
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+    opacity: 0;
+}
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+}
+
+/* Once click on the hamburger layout */
+
+.open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(229, 224, 224);
+
+    z-index: 999;
+}
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    /* height: calc(100vh - 50px); */
+    height: 50vh;
+    width: 100%;
+}
+
+.mobile-menu li {
+    margin-bottom: 10px;
+}
+
+/* Shopping cart counter */
+
+#lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+}
+
+@media only screen and (max-width: 992px) {
+    /* header nav {
+        display: none;
+    }
+
+    header ul {
+        display: none;
+    } */
+    .hideme {
+        display: none;
+    }
+
+    #hamburger-icon {
+        display: block;
+    }
+
+    /* search bar */
+    #hamburger-icon input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 300px;
+        margin: 0;
+        padding: 14px;
+    }
+
+    #search-mobile {
+        display: block;
+        margin: auto;
+        margin-right: 10px;
+        /* float: right; */
+        padding: 6px;
+       
+    }
+
+    #search-mobile form:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+   
+}
+
+/* @media screen and (min-width: 576px) {
+    .hideme {
+        display: none;
+    }
+
+} */
+
+/* @media screen and (min-width: 768px) {
+    .hideme {
+        display: none;
+    }
+} */

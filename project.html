@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main_aboutUs.css" />
+    <link rel="stylesheet" href="css/compon_navbar.css" />
+    <link rel="stylesheet" href="css/compon_footer.css" />
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div id="navbar">
+    </div>
+
+    <!-- @@ Shaun: I can't edit the CSS given the team's master file issue. Text now is just a placeholder -->
+    <section class="showcase-area" id="showcase">
+        <div class="showcase-container" style="color: black;">
+            <h1 class="main-title" id="home">
+                Project Overview
+            </h1>
+            <h6>
+                Project Wellow is a responsive, Minimum Viable Product (MVP) web application that aims to empower a
+                fresh produce wholesaler to
+                make B2B transactions while also providing an online presence to better brand the business.
+            </h6>
+            <h6>
+                This capstone was collaboratively built and completed by a <a href="aboutus.html">team of three</a>,
+                as part of a <a href="https://singapore.generation.org/launch-your-career-in-tech/">GenSG</a> Junior
+                Full Stack Developer Bootcamp (6th cohort).
+            </h6>
+            <h6>
+                This capstone project was built collaboratively with applied learning using:
+                <mark>HTML</mark>,
+                <mark>CSS</mark>,
+                <mark>Bootstrap</mark>,
+                <mark>Javascript</mark>,
+                <mark>ReactJS</mark>,
+                <mark>Java</mark>,
+                <mark>Spring Boot</mark>, and
+                <mark>SQL</mark>.
+            </h6>
+        </div>
+    </section>
+
+
+    <!-- Wellow Sales Copy -->
+    <div class="container">
+        <h1 class="main-title text-center" id="home">'Wellow' Business Context</h1>
+        <p>
+            'Wellow' is a pseudo, haute-couture produce wholesaler based in Singapore.
+        </p>
+        <p>
+            The business prides itself on providing the highest quality, unique, and exclusive produce to its discerning
+            clientele in South East Asia. Clients include artisan chefs, star-chefs, omakases, fine-dining
+            restaurants, and top hotels.
+        </p>
+        <p>
+            The business specialise in sourcing and providing a wide variety of premium ingredients that will elevate
+            the taste, presentation, and overall dining experience of our clients' dishes. To ensure optimal freshness
+            and quality, we work directly with farmers and growers to actively source the freshest and most unique
+            produce to offer our clients. It also operate & grow a select range of culinary ingridents in our
+            in-house, clean-room smart vertical farming facility.
+        </p>
+    </div>
+
+
+    <!-- Project Requirement Document -->
+    <div class="container">
+        <h1 class="main-title text-center" id="home">Software Requirements Document</h1>
+
+        <p>Download the captstone project:<a href="______" class="btn"> <img class="me-1 mb-1"
+                    src="img/assets/profile_docs.png" class="d-inline-block align-top" height="20">Software Requirement
+                Document</a></p>
+    </div>
+
+
+    <!-- Backend Screenshots -->
+    <div class="container">
+        <h1 class="main-title text-center" id="home">Backend Highlights & Screenshots</h1>
+
+        <span class="image main"><img src="img/assets/banner_about.jpg" alt="" />
+            <br>
+            <span style="color:grey; font-size: 12px;"><i>credit: Chris Ried</i></span>
+        </span>
+        <p></p>
+        <p>We will highlight and screenshot 2-4 aspects some of the backend here. Examples:</p>
+        <li>database schema design</li>
+        <li>component structure approach for better team </li>
+        <li>API design</li>
+        <li>in-page admin CRUD with authenticated login.</li>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <!-- use jqueryv library to load the common pages -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $("#navbar").load("content/component/compon_navbar.html");
+            $("#footer").load("content/component/compon_footer.html");
+
+
+
+        });
+    </script>
+    <script src="js/compon_navbar.js"></script>
+
+</body>
+
+</html>
