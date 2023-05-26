@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main_aboutUs.css" />
+    <link rel="stylesheet" href="css/compon_navbar.css" />
+    <link rel="stylesheet" href="css/compon_footer.css" />
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div th:insert="~{common/compon_navbar :: compon_navbar}" id="navbar"> </div>
+
+
+
+
+
+    <div class="container" style="text-align: center;">
+        <h1 class="main-title text-center" id="home">Vertical Farming</h1>
+        <hr class="featurette-divider">
+        <h6 class="text-center">
+            Introducing Vertical Farming for Singapore, a sustainable solution that maximizes agricultural productivity
+            within limited urban spaces. By utilizing vertically stacked layers, advanced hydroponic systems, and LED
+            lighting, vertical farms optimize land efficiency and create optimal growing conditions for crops.
+        </h6>
+        <p>
+        <div style="max-width: 100%;">
+            <img class="text-center" src="img/assets/vert_farm_1.jpg" style="max-width: 100%; height: auto;"> <br>
+            <span class="text-center" style="font-style: italic; font-size: smaller; color: grey;">source: <a
+                    href="https://en.wikipedia.org/wiki/Vertical_farming#/media/File:Посещение_городской_вертикальной_фермы_«РусЭко»_(С._Собянин;_ноябрь_2019)_·_7.jpg"
+                    target="_blank">wikipedia</a></span>
+        </div>
+        </p>
+        <h6 class="text-center">
+            With precise control over factors like temperature, humidity, and nutrient levels, these farms ensure
+            consistent, high-quality produce year-round. Vertical Farming in Singapore offers locally grown,
+            pesticide-free vegetables and herbs that are harvested at their peak freshness and nutritional value.
+        </h6>
+        <p class="text-center">
+        <div style="max-width: 100%;">
+            <img class="text-center" src="img/assets/vert_farm_2.jpg" style="max-width: 100%; height: auto;"> <br>
+            <span class="text-center" style="font-style: italic; font-size: smaller; color: grey;">source: <a
+                    href="https://upload.wikimedia.org/wikipedia/commons/f/f2/Посещение_городской_вертикальной_фермы_«РусЭко»_(С._Собянин%3B_ноябрь_2019)_·_8.jpg"
+                    target="_blank">wikipedia</a></span>
+        </div>
+        </p>
+        <h6 class="text-center">
+            By reducing transportation distances, these farms can provide residents with produce at a greatly reduced
+            carbon footprint, farm-to-table goodness & promoting a greener, self-sufficient future for Singapore.
+        </h6>
+        <h6 class="text-center">
+            By reducing transportation distances, these farms can provide residents with produce at a greatly reduced
+            carbon footprint, farm-to-table goodness & promoting a greener, self-sufficient future for Singapore.
+        </h6>
+
+    </div>
+
+
+
+
+    <!-- Footer -->
+    <div th:insert="~{common/compon_footer :: compon_footer}" id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <!-- use jqueryv library to load the common pages -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <!--    <script>-->
+
+    <!--        $(document).ready(function () {-->
+    <!--            $("#navbar").load("content/component/compon_navbar.html");-->
+    <!--            $("#footer").load("content/component/compon_footer.html");-->
+
+
+
+    <!--        });-->
+    <!--    </script>-->
+    <script src="js/compon_navbar.js"></script>
+
+</body>
+
+</html>

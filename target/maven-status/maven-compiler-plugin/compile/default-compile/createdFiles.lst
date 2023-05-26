@@ -1,0 +1,10 @@
+org/generation/fsdteamwellow/FsdteamwellowApplication.class
+org/generation/fsdteamwellow/controller/ProductController.class
+org/generation/fsdteamwellow/service/ProductServiceMySQL.class
+org/generation/fsdteamwellow/repository/entity/Product.class
+org/generation/fsdteamwellow/repository/ProductRepository.class
+org/generation/fsdteamwellow/controller/dto/ProductDTO.class
+org/generation/fsdteamwellow/security/WebSecurityConfig.class
+org/generation/fsdteamwellow/service/ProductService.class
+org/generation/fsdteamwellow/component/FileUploadUtil.class
+org/generation/fsdteamwellow/security/MvcConfig.class

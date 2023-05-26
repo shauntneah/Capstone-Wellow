@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main_aboutUs.css" />
+    <link rel="stylesheet" href="css/compon_navbar.css" />
+    <link rel="stylesheet" href="css/compon_footer.css" />
+
+
+</head>
+
+<body>
+    <!-- Navigation -->
+    <div th:insert="~{common/compon_navbar :: compon_navbar}" id="navbar"></div>
+
+    <section class="text-center" style="background-color: #cbcbc5" id="showcase">
+        <div class="container" style="color: black;">
+            <h1 class="main-title" id="project">
+                Project Overview
+            </h1>
+            <h6 class="">
+                Project Wellow is a responsive, Minimum Viable Product (MVP) web application that aims to empower a
+                fresh produce wholesaler to
+                make B2B transactions while also providing an online presence to better brand the business.
+            </h6>
+            <h6 class="">
+                This capstone was collaboratively built and completed by a <a th:href="@{aboutUs}"
+                    style="color: #17bb17;">team of three</a>,
+                as part of a <a href="https://singapore.generation.org/launch-your-career-in-tech/" target="_blank"
+                    style="color: #17bb17;">GenSG</a> Junior
+                Full Stack Developer Bootcamp (6th cohort).
+            </h6>
+            <h6>
+                This capstone project was built collaboratively with applied learning using:
+                <mark>HTML</mark>,
+                <mark>CSS</mark>,
+                <mark>Bootstrap</mark>,
+                <mark>Javascript</mark>,
+                <!-- <mark>ReactJS</mark>, -->
+                <mark>Java</mark>,
+                <mark>Spring Boot</mark>, and
+                <mark>SQL</mark>.
+            </h6>
+            <br>
+        </div>
+    </section>
+
+
+    <!-- Wellow Sales Copy -->
+    <div class="container text-center" style="color: black;">
+        <h1 class="main-title text-center" style="padding-top: 55px;">'Wellow' Business Context</h1>
+        <h6>
+            'Wellow' is a pseudo, haute-couture produce wholesaler based in Singapore.
+        </h6>
+        <h6>
+            The business prides itself on providing the highest quality, unique, and exclusive produce to its discerning
+            clientele in South East Asia. Clients include artisan chefs, star-chefs, omakases, fine-dining
+            restaurants, and top hotels.
+        </h6>
+        <h6>
+            The business specialise in sourcing and providing a wide variety of premium ingredients that will elevate
+            the taste, presentation, and overall dining experience of our clients' dishes. To ensure optimal freshness
+            and quality, we work directly with farmers and growers to actively source the freshest and most unique
+            produce to offer our clients. It also operate & grow a select range of culinary ingridents in our
+            in-house, clean-room smart vertical farming facility.
+        </h6>
+    </div>
+
+
+    <!-- Project Requirement Document -->
+    <div class=" container text-center" style="color: black;">
+        <h1 class="main-title text-center" style="padding-top: 55px;">Software Requirement Document</h1>
+
+        <h6>To understand our scope of work, you can download the capstone Software Requirements
+            Document per the bootcamp's requirement here: <a
+                href="https://drive.google.com/file/d/1dJobq_UQi3CFqTyKl0BsThGyKQdvcg44/view?usp=share_link"
+                target="_blank" class="btn"><img class="me-1 mb-1 d-inline-block align-top"
+                    src="img/assets/profile_docs.png" height="20"></a></h6>
+    </div>
+
+
+    <!-- highlights -->
+    <div class="container text-center">
+        <section id="Highlights"> <!-- Quick link  -->
+            <h1 class="main-title" id="home" style="padding-top: 50px; padding-bottom: 50px;">Project Highlights</h1>
+            <!-- <div style="max-width: 100%;">
+                <img src="img/assets/banner_about.jpg" style="max-width: 100%; height: auto;">
+                <br>
+                <span style="font-style: italic; font-size: smaller; color: grey;">credit: <a
+                        href="https://unsplash.com/photos/ieic5Tq8YMk" target="_blank">Chris Ried</a></span>
+            </div> -->
+
+            <div>
+                <!--Shaun -->
+                <p style="font-size: 24px; color: #03b303;">component structure approach for better team </p>
+                <img src="img/assets/highlight_components.jpeg"
+                    style="max-width: 100%; height: auto; padding-bottom: 60px;">
+                <p> </p>
+
+                <!--Aqilah -->
+                <p style="font-size: 24px; color: #03b303;">database schema design</p>
+                <img src="img/assets/highlight_schema.jpeg"
+                    style="max-width: 100%; height: auto; padding-bottom: 60px;">
+                <p> </p>
+
+                <!--Shaq -->
+                <p style="font-size: 24px; color: #03b303;">in-page admin with authenticated login</p><!--Shaq -->
+                <img src="img/assets/highlight_admin.png" style="max-width: 100%; height: auto; padding-bottom: 60px;">
+                <p> </p>
+
+                <!--Shaun -->
+                <p style="font-size: 24px; color: #03b303;">email anti-spam using combination of javascript obfuscation
+                    + unicode encoding</p>
+                <img src="img/assets/highlight_ obfuscation.jpeg"
+                    style="max-width: 100%; height: auto; padding-bottom: 60px;">
+                <p> </p>
+            </div>
+            <br>
+
+        </section>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div th:insert="~{common/compon_footer :: compon_footer}" id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+    <!-- use jqueryv library to load the common pages -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js"></script>
+
+    <!--    <script>-->
+
+    <!--        $(document).ready(function () {-->
+    <!--            $("#navbar").load("content/component/compon_navbar.html");-->
+    <!--            $("#footer").load("content/component/compon_footer.html");-->
+
+
+
+    <!--        });-->
+    <!--    </script>-->
+    <script src="js/compon_navbar.js"></script>
+
+</body>
+
+</html>

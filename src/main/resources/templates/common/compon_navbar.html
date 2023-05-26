@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/" xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Navigation Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/compon_navbar.css" />
+</head>
+
+<body>
+   
+
+    <header th:fragment="compon_navbar">
+        <div id="brand"><a href="#"><img class="d-inline-block align-top" src="img/assets/logo.png"
+                    height="30" />Wellow</a>
+
+            <ul class="hideme">
+                <li><a th:href="@{index}">Home</a></li>
+                <li><a th:href="@{project}">Project Overview</a></li>
+                <li><a th:href="@{aboutUs}">About Us</a></li>
+                <li><a th:href="@{vert_farm}">Vertical Farm</a></li>
+                <li><a th:href="@{product}">Products</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a th:href="@{admin_product}">Manage</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a th:href="@{#}">Orders</a></li>
+
+            </ul>
+
+        </div>
+        <nav class="hideme">
+            <ul>
+                <div sec:authorize="isAuthenticated()">
+                    <p class="mt-3">Welcome, <span th:text="${#authentication.name}"></span>!</p>
+                </div>
+
+
+                <div sec:authorize="isAnonymous()">
+                <li class="login"><a th:href="@{login}">Login</a></li>
+                </div>
+
+
+                <div sec:authorize="isAuthenticated()">
+                    <form id="logOut" th:action="@{/logout}" method="post">
+                <li style="color: #498afb"><a class="link-primary logout" onclick="document.getElementById('logOut').submit();">Logout</a></li>
+                    </form>
+                </div>
+
+
+
+            </ul>
+        </nav>
+       
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <!-- 3 bar for hamburger -->
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a th:href="@{index}">Home</a></li>
+                <li><a th:href="@{project}">Project Overview</a></li>
+                <li><a th:href="@{aboutUs}">About Us</a></li>
+                <li><a th:href="@{vert_farm}">Vertical Farm</a></li>
+                <li><a th:href="@{product}">Products</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a th:href="@{admin_product}">Manage</a></li>
+                <li sec:authorize="hasRole('ADMIN')"><a th:href="@{order}">Orders</a></li>
+
+
+
+                    <li  sec:authorize="isAnonymous()" class="login"><a th:href="@{login}">Login</a></li>
+
+
+
+                        <form sec:authorize="isAuthenticated()" id="logOut2" th:action="@{/logout}" method="post">
+                        <li style="color: #498afb"><a class="link-primary logout" onclick="document.getElementById('logOut2').submit();">Logout</a></li>
+                    </form>
+
+            </ul>
+
+        </div>
+    </header>
+    <script src="../../js/compon_navbar.js"></script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

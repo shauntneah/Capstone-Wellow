@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+
+  font-size: 14px;
+  font-family: 'Lato', sans-serif;
+
+  color: seashell;
+  
+}
+
+/* Common Styles */
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 22px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}
+
+/* Filter button */
+
+.special-menu {
+  margin-bottom: 40px;
+}
+
+.filter-button-group {
+  display: inline-block;
+}
+
+.filter-button-group button {
+  background: #8BC34A;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  padding: 5px 30px;
+  font-size: 18px;
+}
+
+.filter-button-group button.active {
+  background: #000000;
+}
+
+@media screen and (max-width: 992px) {
+  .border-sm-start-none {
+    border-left: none !important;
+  }
+
+
+  .mobile-image {
+
+    width: 60%;
+    margin: 25%;
+    /* border: 1px solid black; */
+
+  }
+
+  .filter-button-group button {
+    font-size: 14px;
+    padding: 5px 18px;
+    margin-bottom: 3px;
+  }
+
+}
